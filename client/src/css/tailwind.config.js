@@ -1,7 +1,8 @@
-/** @type {import('tailwindcss').Config} */
-
 module.exports = {
-  content: ['./src/**/*.{js,jsx}'],
+  content: [
+    './index.html',
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
   theme: {
     extend: {
       colors: {
@@ -132,5 +133,6 @@ module.exports = {
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [
+    require('@tailwindcss/forms'),
   ],
 };

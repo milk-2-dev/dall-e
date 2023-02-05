@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=fallback');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/range-slider.css';
+@import 'additional-styles/toggle-switch.css';
+@import 'additional-styles/theme.css';
+
+@import 'tailwindcss/utilities';
+
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+    display: none;
+}
+
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+    .card:nth-child(7n + 1) {
+        grid-column: auto/span 2;
+        grid-row: auto/span 2;
+    }
+}
+
+.prompt::-webkit-scrollbar {
+    width: 5px;
+}
+
+.prompt::-webkit-scrollbar-thumb {
+    background-color: #666e75;
+    border-radius: 5px;
+}
+
