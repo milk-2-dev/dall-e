@@ -103,6 +103,7 @@ module.exports = {
       minWidth: {
         '10': '2.5rem',
         '48': '12rem',
+        '250': '250px'
       },
       opacity: {
         '90': '0.9',

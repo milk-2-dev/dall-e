@@ -13,8 +13,8 @@ const RenderCards = ({data, title}) => {
   };
 
   const handlelCloseModal = () => {
-    setVideoModalOpen(false)
-  }
+    setVideoModalOpen(false);
+  };
 
   if (data?.length > 0) {
     return (
@@ -99,15 +99,13 @@ function FeaturesBlocks() {
             )}
           </div>
 
-          <div>
-            <FormField
-              labelName="Search posts"
-              type="text"
-              name="text"
-              placeholder="Search something..."
-              value={searchText}
-              handleChange={handleSearchChange}
-            />
+          <div className="flex justify-end">
+            <input type="text"
+                   className="border-b border-black bg-transparent py-2 px-2 outline-none  min-w-full md:min-w-250"
+                   name="text"
+                   placeholder="Search something..."
+                   value={searchText}
+                   onChange={handleSearchChange}/>
           </div>
 
           <div className="mt-10 min-h-[calc(100vh-73px)]">
